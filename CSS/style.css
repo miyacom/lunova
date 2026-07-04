@@ -229,6 +229,10 @@ img {
     margin: 100px auto 0;
 }
 
+.new-arrivals__list{
+    margin-bottom: 80px;
+}
+
 .new-arrivals__list ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -282,24 +286,21 @@ img {
 }
 
 /************* 
-ランキング
+ランキング・コーディネイト
 **************/
 
-.ranking {
-    max-width: 1000px;
-    width: 100%;
-    margin: 100px auto 0;
-}
-
-/************* 
-コーディネイト
-**************/
-
+.ranking,
 .coordinate {
     max-width: 1000px;
     width: 100%;
-    margin: 100px auto 0;
+    margin: 0 auto;
 }
+
+.ranking__container,
+.coordinate__container {
+    margin-bottom: 80px;
+}
+
 
 /************* 
 フッター
