@@ -1,0 +1,388 @@
+/************* 
+共通部分 
+**************/
+@charset "utf-8";
+
+body {
+    /* 明朝 */
+    /* font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif; */
+    /* ゴシック */
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+    padding-top: 100px;
+}
+
+
+a:hover {
+    opacity: 0.7;
+}
+
+img {
+    max-width: 100%;
+    /* height: auto;→　書かなくても良いがお守り的に書いている */
+    height: auto;
+    /*     display: block;→ imgはインライン要素だがブロック要素に変える指示 */
+    display: block;
+}
+
+/************* 
+ヘッダー
+**************/
+
+.header-wrap {
+    border-top: 10px solid #8e8e7a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.header {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header__logo {
+    max-width: 150px;
+    width: 100%;
+}
+
+.header__search {
+    display: flex;
+    width: 426px;
+    flex-shrink: 0;
+}
+
+.header__search-input {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #8e8e7a;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.header__search-button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #8e8e7a;
+    background-color: #8e8e7a;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    /* 検索窓の虫眼鏡アイコン */
+    font-size: 12px;
+    color: #fff;
+}
+
+.header__nav ul {
+    font-size: 13px;
+    color: #8e8e7a;
+    display: flex;
+    gap: 20px;
+}
+
+/************* 
+ヒーローコンテンツ　バナー＆スライダー
+**************/
+
+.hero {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #bfbfb3;
+    padding: 20px;
+}
+
+.hero__content {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.hero__banners {
+    width: 240px;
+}
+
+.hero__banners ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+}
+
+.hero__banners li {
+    width: 100%;
+}
+
+.hero__banners img,
+.hero__slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero__banner-item {
+    flex: 1;
+}
+
+.hero__banner-item a {
+    display: block;
+    height: 100%;
+}
+
+.hero__slider {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero__slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 1));
+    pointer-events: none;
+    z-index: 10;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 500px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #8e8e7a;
+    z-index: 20;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 24px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #8e8e7a;
+}
+
+/************* 
+セクションタイトル
+**************/
+.section-title {
+    display: flex;
+    align-items: baseline;
+    gap: 5px
+}
+
+.section-title__en {
+    font-size: 27px;
+    color: #a1a194;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.section-title__ja {
+    font-size: 12px;
+    color: #a1a194;
+    font-weight: 100;
+}
+
+/************* 
+カテゴリー
+**************/
+
+.category {
+    max-width: 1000px;
+    width: 100%;
+    margin: 80px auto 0;
+}
+
+.category__container ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/************* 
+新着商品
+**************/
+.new-arrivals {
+    max-width: 1000px;
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+.new-arrivals__list ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.product-card {
+    width: 230px;
+    height: 340px;
+    color: #8e8e7a;
+}
+
+.product-card img {
+    border: 1px solid #8e8e7a;
+    border-radius: 3%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.product-card__name {
+    font-size: 14px;
+    line-height: 1.5;
+
+    /* 超えた商品名を隠す */
+    overflow: hidden;
+
+    /* 2行で省略する */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    min-height: calc(1.5em * 2);
+}
+
+.product-card__price {
+    font-size: 16px;
+}
+
+.product-card__tax {
+    font-size: 12px;
+}
+
+.product-card__more {
+    width: 230px;
+    height: 230px;
+    text-align: center;
+    line-height: 230px;
+    border: 1px solid #8e8e7a;
+    border-radius: 3%;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/************* 
+ランキング
+**************/
+
+.ranking {
+    max-width: 1000px;
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+/************* 
+コーディネイト
+**************/
+
+.coordinate {
+    max-width: 1000px;
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+/************* 
+フッター
+**************/
+.footer-wrap {
+    background-color: #8e8e7a;
+}
+
+.footer {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* 下揃えさせる */
+    align-items: flex-end;
+    padding: 60px 0;
+    color: #fff;
+}
+
+
+/********** フッター企業情報 **************/
+.footer__company img {
+    width: 140px;
+    margin-bottom: 20px;
+}
+
+.footer__company-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    letter-spacing: 0.5px;
+}
+
+.footer__address {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/********** フッター　リンク集 **************/
+.footer__links {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/********** フッター　問い合わせ **************/
+.footer__contact h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer__contact-tel {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.footer__contact-mail {
+    font-size: 31.5px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+}
+
+.footer__contact-hours {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/********** フッター　注釈 **************/
+
+.footer__memo {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 8px;
+    padding-bottom: 40px;
+}
+
+/************* 
+レスポンシブ
+**************/
+
+@media screen and (max-width:768px) {}

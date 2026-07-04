@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunova | 北欧・インテリア家具の専門店　通販サイト　Lunovaルノバ</title>
+  <meta name="description" content="北欧家具・インテリア専門店「Lunova」では、北欧やイギリスを中心とした家具やインテリア小物を取り揃え、トータルコーディネートをご提案・販売しています。">
+  <meta property="og:site_name" content="Lunova | 北欧　インテリア家具">
+  <!-- og:typeは通常ページならwebsite、記事ページならarticle -->
+  <meta property="og:type" content="website">
+  <!-- URLは公開する時に書く -->
+  <meta property="og:url" content="#####">
+  <meta property="og:title" content="Lunova | 北欧　インテリア家具">
+  <meta property="og:description"
+    content="北欧家具・インテリア専門店「Lunova」では、北欧やイギリスを中心とした家具やインテリア小物を取り揃え、トータルコーディネートをご提案・販売しています。">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://lunova.com/images/ogp.jpg"><!-- サーバーアップしたら更新する！ -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ファビコン -->
+  <link rel="icon" href="img/icon.ico">
+
+  <!-- 電話番号の自動リンクオフ -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+  <!-- ここからヘッダー -->
+  <header class="header-wrap">
+    <div class="header">
+      <!-- ヘッダー　ロゴ -->
+      <h1 class="header__logo"><a href="index.html"><img src="img/lunova_logo2.png" alt="Lunova"></a></h1>
+      <!-- ヘッダー　検索 -->
+      <form class="header__search" action="#">
+        <input class="header__search-input" type="search" placeholder="商品を検索">
+        <button class="header__search-button" type="submit">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+      </form>
+      <!-- ヘッダー　ナビ -->
+      <nav class="header__nav">
+        <ul>
+          <li><a href="login.html">ログイン</a></li>
+          <li><a href="signup.html">会員登録</a></li>
+          <li><a href="cart.html">カート</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- ここからバナー -->
+    <section class="hero">
+      <!-- ここからバナー -->
+      <div class="hero__content">
+        <div class="hero__banners">
+          <ul>
+            <li class="hero__banner-item"><a href="#"><img src="img/05_banner/banner1.jpg" alt="スプリングセール"></a></li>
+            <li class="hero__banner-item"><a href="#"><img src="img/05_banner/banner2.jpg" alt="モダンコレクション"></a></li>
+            <li class="hero__banner-item"><a href="#"><img src="img/05_banner/banner3.jpg" alt="高級感のあるインテリア"></a></li>
+          </ul>
+        </div>
+
+        <!-- ここからスライダー -->
+        <div class="hero__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="img/05_banner/slider1.jpg" alt="北欧インテリア特集"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/05_banner/slider2.jpg" alt="リビング家具特集"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/05_banner/slider3.jpg" alt="人気アイテム特集"></a>
+            </div>
+          </div>
+          <!-- ページネーションの丸 -->
+          <div class="swiper-pagination"></div>
+
+          <!-- 左右の矢印 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ここからカテゴリ -->
+    <section class="category">
+      <h2 class="section-title">
+        <span class="section-title__en">Category</span>
+        <span class="section-title__ja">カテゴリ</span>
+      </h2>
+      <div class="category__container">
+        <ul>
+          <li><a href="product.html"><img src="img/06_cate/Category1.jpg" alt=""></a></li>
+          <li><a href="product.html"><img src="img/06_cate/Category2.jpg" alt=""></a></li>
+          <li><a href="product.html"><img src="img/06_cate/Category3.jpg" alt=""></a></li>
+          <li><a href="product.html"><img src="img/06_cate/Category4.jpg" alt=""></a></li>
+          <li><a href="product.html"><img src="img/06_cate/Category5.jpg" alt=""></a></li>
+          <li><a href="product.html"><img src="img/06_cate/Category6.jpg" alt=""></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ここから新商品一覧 -->
+    <div class="new-arrivals">
+      <h2 class="section-title">
+        <span class="section-title__en">New Arrivals</span>
+        <span class="section-title__ja">新着商品</span>
+      </h2>
+      <!-- ここから新商品一覧 カード一覧-->
+      <section class="new-arrivals__list">
+        <ul>
+          <!-- ここから新商品一覧 カード一覧  1行目-->
+          <li class="product-card">
+            <a href="product.html">
+              <img class="product-card__image" src="img/03_item/art4.png" alt="商品名商品名">
+              <p class="product-card__name">商品名商品名商名商品名商品名商品名商品名商品名</p>
+              <p class="product-card__price">9,999<span class="product-card__tax">円(税込)</span></p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="product.html">
+              <img class="product-card__image" src="img/03_item/basket3.png" alt="商品名商品名">
+              <p class="product-card__name">商品名商品名商品名名</p>
+              <p class="product-card__price">9,999<span class="product-card__tax">円(税込)</span></p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="product.html">
+              <img class="product-card__image" src="img/03_item/book1.png" alt="商品名商品名">
+              <p class="product-card__name">商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名</p>
+              <p class="product-card__price">9,999<span class="product-card__tax">円(税込)</span></p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="product.html">
+              <img class="product-card__image" src="img/03_item/chair1.png" alt="商品名商品名">
+              <p class="product-card__name">商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名</p>
+              <p class="product-card__price">9,999<span class="product-card__tax">円(税込)</span></p>
+            </a>
+          </li>
+          <!-- ここから新商品一覧 カード一覧  2行目-->
+          <li class="product-card">
+            <a href="product.html">
+              <img class="product-card__image" src="img/03_item/chest1.png" alt="商品名商品名">
+              <p class="product-card__name">商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名</p>
+              <p class="product-card__price">9,999<span class="product-card__tax">円(税込)</span></p>
+            </a>
+          </li>
+
+          <li class="product-card">
+            <a href="product.html">
+              <img class="product-card__image" src="img/03_item/chest6.png" alt="商品名商品名">
+              <p class="product-card__name">商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名</p>
+              <p class="product-card__price">9,999<span class="product-card__tax">円(税込)</span></p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="product.html">
+              <img class="product-card__image" src="img/03_item/ottoman3.png" alt="商品名商品名">
+              <p class="product-card__name">商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名</p>
+              <p class="product-card__price">9,999<span class="product-card__tax">円(税込)</span></p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="product.html">
+              <img class="product-card__image" src="img/03_item/pod1.png" alt="商品名商品名">
+              <p class="product-card__name">商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名</p>
+              <p class="product-card__price">9,999<span class="product-card__tax">円(税込)</span></p>
+            </a>
+          </li>
+          <!-- ここから新商品一覧 カード一覧  3行目-->
+          <li class="product-card">
+            <a href="product.html">
+              <img class="product-card__image" src="img/03_item/sofa1.png" alt="商品名商品名">
+              <p class="product-card__name">商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名</p>
+              <p class="product-card__price">9,999<span class="product-card__tax">円(税込)</span></p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="product.html">
+              <img class="product-card__image" src="img/03_item/sofa9.png" alt="商品名商品名">
+              <p class="product-card__name">商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名</p>
+              <p class="product-card__price">9,999<span class="product-card__tax">円(税込)</span></p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="product.html">
+              <img class="product-card__image" src="img/03_item/table_hight4.png" alt="商品名商品名">
+              <p class="product-card__name">商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名商品名</p>
+              <p class="product-card__price">9,999<span class="product-card__tax">円(税込)</span></p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="product.html">
+              <p class="product-card__more">More...</p>
+            </a>
+          </li>
+
+        </ul>
+      </section>
+    </div>
+    <!-- ここからランキング -->
+    <section class="ranking">
+      <h2 class="section-title">
+        <span class="section-title__en">Ranking</span>
+        <span class="section-title__ja">人気ランキング・売れ筋商品</span>
+      </h2>
+      <div class="ranking__container">
+              <div class="ranking">
+      </div>
+      </div>
+
+      <!-- ここからコーディネイト -->
+      <section class="coordinate">
+        <h2 class="section-title">
+          <span class="section-title__en">Coordinate</span>
+          <span class="section-title__ja">おすすめのコーディネイト</span>
+        </h2>
+        <div class="coordinate__container">
+          <div class="coordinate">
+          </div>
+        </div>
+
+  </main>
+  <!-- ここからフッター-->
+  <footer class="footer-wrap">
+    <div class="footer">
+
+      <!-- ここからフッタ  企業情報ー-->
+      <div class="footer__company">
+        <img src="img/lunova_logo1.png" alt="Lunova">
+        <p class="footer__company-name">ルノバジャパン株式会社</p>
+        <p class="footer__address">〒100-8111 東京都千代田区千代田11-11</p>
+      </div>
+      <!-- ここからフッタ  リンク集ー-->
+      <div class="footer__links">
+        <ul>
+          <li><a href="#">会社紹介</a></li>
+          <li><a href="#">利用規約</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">特定商取引法に基づく表記</a></li>
+          <li><a href="#">お支払方法について</a></li>
+          <li><a href="#">配送について</a></li>
+          <li><a href="#">返品・交換について</a></li>
+          <li><a href="#">お客様センター</a></li>
+        </ul>
+      </div>
+      <!-- ここからフッタ  問い合わせー-->
+      <div class="footer__contact">
+        <h3>お問い合わせ</h3>
+        <p class="footer__contact-tel">0120-000-000</p>
+        <p class="footer__contact-mail">info@lunova.com</p>
+        <p class="footer__contact-hours">営業時間<br>平日：10:00〜17:00　土日祝：定休日</p>
+      </div>
+    </div>
+    <!-- ここからフッタ  注釈ー-->
+    <div class="footer__memo">
+      <p>※本サイトは学習目的で制作した架空のECサイトです。実在する企業・団体とは関係なく、商品は全て実在しません。</p>
+    </div>
+    </div>
+
+    <!-- JS読み込むの -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+/************* 
+共通部分 
+**************/
+@charset "utf-8";
+
+body {
+    /* 明朝 */
+    /* font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif; */
+    /* ゴシック */
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+    padding-top: 100px;
+}
+
+
+a:hover {
+    opacity: 0.7;
+}
+
+img {
+    max-width: 100%;
+    /* height: auto;→　書かなくても良いがお守り的に書いている */
+    height: auto;
+    /*     display: block;→ imgはインライン要素だがブロック要素に変える指示 */
+    display: block;
+}
+
+/************* 
+ログイン
+**************/
+
+.login__container {
+    max-width: 642px;
+    width: 100%;
+    margin: 0 auto 40px;
+}
+
+.login__title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #8e8e7a;
+    margin-bottom: 10px;
+}
+
+.login__container p {
+    font-size: 13px;
+    color: #8e8e7a;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    max-width: 642px;
+    width: 100%;
+    border-bottom: 1px solid #8e8e7a;
+}
+
+.login-form__group {
+    display: flex;
+    height: 80px;
+    border-top: 1px solid #8e8e7a;
+}
+
+.login-form__label {
+    width: 190px;
+    color: #ffffff;
+    font-size: 13px;
+    background-color: #bfbfb3;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.login-form__input {
+    width: 350px;
+    height: 38px;
+    margin: auto 32px;
+    padding: 0 12px;
+    font-size: 14px;
+    border: 1px solid #8e8e7a;
+}
+
+.login-form__button,
+.login-regist {
+    display: block;
+    width: 190px;
+    height: 40px;
+    margin: 24px auto 0;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #8e8e7a;
+    line-height: 40px;
+}
+
+.login__forget {
+    width: 200px;
+    margin: 16px auto 100px;
+    text-align: center;
+    border-bottom: 1px solid #8e8e7a;
+}
+
+.login__forget a {
+    font-size: 13px;
+    color: #8e8e7a;
+}
+
+/******************* ここまでログインページ ********************/
+/******************* ここからパスワード再設定 ********************/
+.login-regist {
+    margin-bottom: 200px;
+    line-height: 40px;
+}
+
+.forget__button {
+    max-width: 642px;
+    width: 100%;
+    margin-bottom: 400px;
+}
+
+.forget__button__container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 24px auto 40px;
+}
+
+.login-form__button-back {
+    display: block;
+    width: 190px;
+    height: 40px;
+    margin: 24px 0 0;
+    border-radius: 5px;
+    text-align: center;
+    color: #8e8e7a;
+    background-color: #ffffff;
+    border: 1px solid #8e8e7a;
+    line-height: 40px;
+}
+
+.login-form__button-submit {
+    display: block;
+    width: 190px;
+    height: 40px;
+    margin: 24px 0 0;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #8e8e7a;
+    line-height: 40px;
+}
+
+/******************* ここまでパスワード再設定 ********************/
+/******************* ここから会員登録 ********************/
+.signup__button {
+    max-width: 642px;
+    width: 100%;
+    margin-bottom: 400px;
+}
+
+.signup__button__container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 24px auto 40px;
+}
+
+.login-form__radio-area {
+    margin-left: 32px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    color: #8e8e7a;
+    font-size: 16px;
+}
+
+.login-form__radio-area input[type="radio"] {
+    margin-right: 8px;
+}
+
+.login-form__group p {
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 80px;
+}
+
+
+
+/******************* ここまで会員登録 ********************/
+
+<div class="login__container"><h2 class="login__title">会員の方</h2><p>メールアドレスとパスワードを入力してログインしてください。</p><div class="login-form"><div class="login-form__group"><label class="login-form__label">メールアドレス</label><input class="login-form__input"></div><div class="login-form__group"><label class="login-form__label">パスワード</label><input class="login-form__input"></div><button class="login-form__button">ログイン</button></div><div class="login__forget"><a href="..//html/forget.html">パスワードをお忘れの方はこちら</a></div>
+/************* 
+会員登録
+**************/
+<div class="login__container"></div><h2 class="login__title">まだ会員登録されていない方</h2><p>初めてご利用の方は、こちらから会員登録してください。</p><button class="login-regist">新規会員登録</button></div>
+/************* 
+レスポンシブ
+**************/
+
+@media screen and (max-width:768px) {}
